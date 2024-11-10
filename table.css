@@ -1,0 +1,23 @@
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 55%;
+}
+table{
+    float: left;
+    margin-right: 30px;
+}
+th, td{
+    padding: 15px
+}
+th {
+    text-align: left;
+    background-color:rgb(185, 223, 242)
+}
+td{
+    background-color: rgb(255, 255, 255);
+}
+caption{
+    text-align: center;
+    font-size: 40px;
+}

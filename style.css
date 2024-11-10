@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(218, 236, 252);
+}
+h1 {
+    background-color: rgb(134, 189, 237);
+    border: solid white;
+    border-width: 5px; 
+    margin-top: 3px;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+h2 {
+    font-style: italic;
+    background-color:white;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid black;
+    width: 71%;
+}
+img {
+    border: solid white;
+    height: 640px;
+    border-width: 10px 10px 10px 10px;
+}
+.header{
+    background-color: rgb(250, 250, 252);
+    text-align: right;
+    padding: 20px
+}
+.container{
+    background-color:rgb(255, 255, 255);
+    border: solid black;
+    height: 300px;
+    width: 1450px;
+}
+.block{
+    background-color:rgb(128, 202, 202);
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+.container-2{
+    background-color:rgb(255, 255, 255);
+    border: solid black;
+    height: 300px;
+    width: 1450px;
+    display: flex;
+    align-items: center;
+}
+.block-2{
+    background-color:rgb(128, 202, 202);
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+}
+.container-3{
+    background-color:rgb(255, 255, 255);
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block-3{
+    background-color: rgb(128, 202, 202);
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+.container-4{
+    background-color:rgb(255, 255, 255);
+    border: solid black; 
+    height: 650px;
+}
+.block4-pos1{
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    border: solid rgb(17, 0, 255);
+}
+.block4-pos2{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border: solid rgb(12, 178, 178);
+    left:125px;
+    top: -175px;
+}
+.block4-pos3{
+    position: relative;
+    border: solid rgb(134, 189, 237);
+    left:250px;
+    top: -350px;
+}
+.container-5{
+    position: fixed; 
+    bottom: 0; 
+    right: 0;     
+    border-radius: 10px;
+}
+.container-5 img{
+    border: solid black;
+    height: 100px;
+    width: 100px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+.content-left {
+    background-color: rgb(134, 189, 237);
+    order: 1;
+    font-size: 22px;
+    padding: 10px;
+}
+.content-right {
+    background-color: white;
+    order: 2;
+}

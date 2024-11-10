@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="table.css" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="aboutMe.html">Основная страница</a>
+        <a href="page2.html">Позиционирование элементов</a>
+        <a href="table.html">Таблица</a>
+    </div>
+    
+    <div class="table_and_form">
+        <div class="table">
+            <table id="myTable">
+                <caption>Заказы</caption>
+                <tr>
+                    <th>Город</th>
+                    <th>Контактное лицо</th>
+                    <th>Дата заказа</th>
+                    <th>Товар</th>
+                </tr>
+                <tr>
+                    <td>Москва</td>
+                    <td>Мария</td>
+                    <td>3128-03-16</td>
+                    <td>Sapporo Gloves</td>
+                </tr>
+                <tr>
+                    <td>Нижний Новгород</td>
+                    <td>Тоня</td>
+                    <td>2022-10-06</td>
+                    <td>Deuce Shirt</td>
+                </tr>
+                <tr>
+                    <td>Астана</td>
+                    <td>Павел</td>
+                    <td>2027-05-17</td>
+                    <td>Wrap Skirt</td>
+                </tr>
+                <tr>
+                    <td>Екатеренбург</td>
+                    <td>Персифальд</td>
+                    <td>2024-02-30</td>
+                    <td>Sapporo Gloves</td>
+                </tr>
+                <tr>
+                    <td>Владимир</td>
+                    <td>Владимир</td>
+                    <td>2024-09-20</td>
+                    <td>Rasta WCT</td>
+                </tr>
+            </table>
+        </div>
+        <div class="form_for_order">
+            <br>
+            <br>
+            <p>Заполните форму ниже для формирования нового заказа</p>
+            <form id="myForm">
+                <label for="city">Город:</label>
+                <br>
+                <input type="text" id="city">
+                <br>
+
+                <label for="person">Контактное лицо:</label>
+                <br>
+                <input type="text" id="person">
+                <br>
+
+                <label for="date">Дата заказа:</label>
+                <br>
+                <input type="date" id="date">
+                <br>
+
+                <label for="product">Товар:</label>
+                <br>
+                <input type="text" id="product">
+                <br>
+                <br>
+                <input type="submit" value="Добавить заказ">
+            </form>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    document.getElementById("myForm").onsubmit = function(event) {
+      event.preventDefault();
+      
+      var table = document.getElementById("myTable");
+      var row = table.insertRow(-1);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+      var cell4 = row.insertCell(3);
+      cell1.innerHTML = document.getElementById("city").value;
+      cell2.innerHTML = document.getElementById("person").value; 
+      cell3.innerHTML = document.getElementById("date").value;
+      cell4.innerHTML = document.getElementById("product").value;
+      document.getElementById('myForm').reset();
+    };
+</script>
+    
+</html>
